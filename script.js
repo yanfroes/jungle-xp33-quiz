@@ -1,3 +1,5 @@
+/*
+
 (function() {
   var questions = [{
     question: "Lorem ipsum Maísa Manoela?",
@@ -165,3 +167,10 @@
     return score;
   }
 })();
+
+function Update(action){
+  document.querySelector('#quiz').innerHTML = App()
+}
+
+window.onload = () => Update()
+*/
