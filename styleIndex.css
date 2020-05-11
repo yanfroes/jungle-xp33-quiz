@@ -9,3 +9,10 @@ body {
 h1 {
     text-align: center;
 }
+
+div.formulario {
+    background-color: teal;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+}
