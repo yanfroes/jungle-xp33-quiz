@@ -1,27 +1,40 @@
 class Quiz{
-    Choices = choices => choices.map((choice, i) => /*html*/`
-    <li>
-        <input type="radio" name="answer" value="${i}">
-        ${choice}
-    </li>
-    `).join('')    
+    highLigth = (index) => {
+        console.log(this.selected)
+        if(this.selected == index){
+            return 'btn-outline-primary'
+        }
+    }
+
+    select = (index) => this.update(() => {
+        this.selected = index
+    })
+
+    Choices = choices => choices.map((choice, i) => {
+        return /*html*/`
+            <button 
+                class="btn-block btn ${this.highLigth(i)}" 
+                onclick="${this.self}.select(${i})")
+            >${choice}</button>
+        `
+    }).join('')    
 
     Buttons = (index) => {
         let result = ''
         if(this.index < this.questions.length -1){
             result += /*html*/`
-            <button class="btn btn-block btn-outline-primary" onclick="${this.self}.confirm(${index})">
+            <button class="btn btn-block btn-success" onclick="${this.self}.confirm(${index})">
                 Próxima
             </button>
         `}else{
             result += /*html*/`
-            <button class="btn btn-block btn-outline-primary" onclick="${this.self}.confirm(${index})">
+            <button class="btn btn-block btn-success" onclick="${this.self}.confirm(${index})">
                 Finalizar
             </button>
         `}
         if(this.index != 0){
             result += /*html*/`
-            <button class="btn btn-block btn-outline-primary" onclick="${this.self}.goBack(${index})">
+            <button class="btn btn-block btn-warning" onclick="${this.self}.goBack(${index})">
                 Anterior
             </button>
             `
@@ -34,12 +47,20 @@ class Quiz{
     `
 
     Question = (index, question) => /*html*/`
-    <h2>Pergunta ${index+1}:</h2>
-    <p>${question.title}</p>
-    <ul id="choices">
-        ${this.Choices(question.choices)}
-    </ul>
-    ${this.Buttons(index)}
+
+    <div class="card" style="width: 18rem;">
+		<img 
+			class="card-img-top" 
+			src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/ce2ece60-9b32-11e6-95ab-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg" 
+			alt="Card image cap"
+		>
+		<div class="card-body">
+		    <h5 class="card-title">Pergunta ${index+1}:</h5>
+			<p>${question.title}</p>
+            ${this.Choices(question.choices)}
+            ${this.Buttons(index)}
+		</div>
+	</div>
     `
 
     Content = () => this.result ? /*html*/`
@@ -78,11 +99,12 @@ class Quiz{
     }
 
     confirm = (index) => this.update(() => {
-        let choice = document.querySelector('#choices [name=answer]:checked')
+        let choice = this.selected
         console.log(choice)
-        if(choice){
-            this.answers[index] = this.questions[index].results[choice.value]
+        if(choice || choice == 0){
+            this.answers[index] = this.questions[index].results[choice]
             if(this.index < this.questions.length -1){
+                this.selected = undefined
                 this.index++
             }
             else{
