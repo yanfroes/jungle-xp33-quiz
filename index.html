@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Grupo 8 - Gama Experience 33</title>
+    <link rel="shortcut icon" href="https://gama.academy/icons/icon-48x48.png?v=757c95a04621d0c77f2dc80aebdf92e8" />
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- testing some fonts here -->
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+  </head>
+</head>
+
+<body>
+  <div id='container'>
+    <h1>Leads do Grupo Jungle</h1>
+    <form id="form" method="POST" action="https://smtl.gama.academy/leads/db22dd71-915e-11ea-9e98-2f3c29e0891c">
+      <label>Digite seu nome completo</label>
+      <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
+      <label>Digite um email válido</label>
+      <input name="email" type="email" title="Digite um email válido" required />
+      <input name="redirectTo" type="hidden" value="https://yanfroes.github.io/grupo8-xp33/quiz.html" />
+      <input name="debugMode" type="hidden" value="true" />
+      <input type="submit" value="Acessar Quiz" />
+    </form>
+  </div>
+
+
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  <script type="text/javascript" src='questions.json'></script>
+  <script type='text/javascript' src='script.js'></script>
+</body>
+
+</html>
