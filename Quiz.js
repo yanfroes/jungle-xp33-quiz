@@ -6,16 +6,31 @@ class Quiz{
     </li>
     `).join('')    
 
-    Buttons = (index) => /*html*/`
-        <button class="btn btn-block btn-outline-primary" onclick="${this.self}.confirm(${index})">
-            Próxima
-        </button>
-    `
+    Buttons = (index) => {
+        let result = ''
+        if(this.index < this.questions.length -1){
+            result += /*html*/`
+            <button class="btn btn-block btn-outline-primary" onclick="${this.self}.confirm(${index})">
+                Próxima
+            </button>
+        `}else{
+            result += /*html*/`
+            <button class="btn btn-block btn-outline-primary" onclick="${this.self}.confirm(${index})">
+                Finalizar
+            </button>
+        `}
+        if(this.index != 0){
+            result += /*html*/`
+            <button class="btn btn-block btn-outline-primary" onclick="${this.self}.goBack(${index})">
+                Anterior
+            </button>
+            `
+        }
+        return result
+    }
 
-    Result = () => this.result ? /*html*/`
+    Result = () => /*html*/`
         Voce é ${this.result}
-    ` : /*html*/`
-        ${this.Question(this.index,this.questions[this.index])}
     `
 
     Question = (index, question) => /*html*/`
@@ -27,9 +42,11 @@ class Quiz{
     ${this.Buttons(index)}
     `
 
-    Content = () => /*html*/`
-        ${this.Result()}
-    `
+    Content = () => this.result ? /*html*/`
+        ${this.Result()}`
+        : /*html*/`
+        ${this.Question(this.index,this.questions[this.index])}
+        `
 
     update(action = () => {}){
         action()
@@ -73,6 +90,10 @@ class Quiz{
             }
         }
         console.log(this.answers,this.questions.length, this.finish)        
+    })
+
+    goBack = (index) => this.update(() => {
+        this.index--
     })
 
     render(){
