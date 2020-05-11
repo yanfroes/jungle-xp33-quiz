@@ -45,9 +45,8 @@
   margin-top: 8px;
   margin-bottom: 8px;
   flex-direction: row;
-  padding: 16px 106px;
+  padding: 16px 16px;
   width: 331px;
-  height: 62px;
   left: 38px;
   top: 363px;
   background: #C4C4C4;
@@ -88,5 +87,6 @@
 }
 
 .card-img-top {
-  max-width: 400px;
+max-height:300px;
+max-width:300px;
 }
