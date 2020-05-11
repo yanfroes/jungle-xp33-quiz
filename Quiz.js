@@ -2,7 +2,7 @@ class Quiz{
     highLigth = (index) => {
         console.log(this.selected)
         if(this.selected == index){
-            return 'btn-outline-primary'
+            return 'button-selected'
         }
     }
 
@@ -12,30 +12,30 @@ class Quiz{
 
     Choices = choices => choices.map((choice, i) => {
         return /*html*/`
-            <button 
-                class="btn-block btn ${this.highLigth(i)}" 
+            <div
+                class="center-things button-choice text-center text-button-choices ${this.highLigth(i)}"
                 onclick="${this.self}.select(${i})")
-            >${choice}</button>
+            >${choice}</div>
         `
-    }).join('')    
+    }).join('')
 
     Buttons = (index) => {
         let result = ''
         if(this.index < this.questions.length -1){
             result += /*html*/`
-            <button class="btn btn-block btn-success" onclick="${this.self}.confirm(${index})">
-                Próxima
+            <button class="center-things button-next" onclick="${this.self}.confirm(${index})">
+                <span class="text-button">Próxima</span>
             </button>
         `}else{
             result += /*html*/`
-            <button class="btn btn-block btn-success" onclick="${this.self}.confirm(${index})">
-                Finalizar
+            <button class="center-things button-next" onclick="${this.self}.confirm(${index})">
+                <span class="text-button">Finalizar</span>
             </button>
         `}
         if(this.index != 0){
             result += /*html*/`
-            <button class="btn btn-block btn-warning" onclick="${this.self}.goBack(${index})">
-                Anterior
+            <button class="center-things button-next" onclick="${this.self}.goBack(${index})">
+                <span class="text-button">Anterior</span>
             </button>
             `
         }
@@ -48,15 +48,15 @@ class Quiz{
 
     Question = (index, question) => /*html*/`
 
-    <div class="card" style="width: 18rem;">
-		<img 
-			class="card-img-top" 
-			src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/ce2ece60-9b32-11e6-95ab-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg" 
+    <div class="card">
+		<img
+			class="card-img-top center-things"
+			src="${question.imagegif}"
 			alt="Card image cap"
 		>
 		<div class="card-body">
-		    <h5 class="card-title">Pergunta ${index+1}:</h5>
-			<p>${question.title}</p>
+		    <h5 class="card-title text-center">Pergunta ${index+1}:</h5>
+			<p class="text-center">${question.title}</p>
             ${this.Choices(question.choices)}
             ${this.Buttons(index)}
 		</div>
@@ -90,9 +90,9 @@ class Quiz{
         this.answers.forEach(item => {
             each[item]++
         })
-        let result = Object.keys(each).reduce((ax, x) => 
+        let result = Object.keys(each).reduce((ax, x) =>
             each[ax] >= each[x] ?
-                ax : x  
+                ax : x
         )
 
         return JSON.stringify(result)
@@ -111,7 +111,7 @@ class Quiz{
                 this.result = this.getResult()
             }
         }
-        console.log(this.answers,this.questions.length, this.finish)        
+        console.log(this.answers,this.questions.length, this.finish)
     })
 
     goBack = (index) => this.update(() => {
@@ -120,7 +120,7 @@ class Quiz{
 
     render(){
         document.querySelector('#quiz').innerHTML = this.Content()
-    }    
+    }
 }
 
 quiz = new Quiz('quiz')
