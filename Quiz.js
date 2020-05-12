@@ -16,9 +16,9 @@ class Quiz{
         let result = ''
         if(this.index != 0){
             result += /*html*/`
-            <button class="center-things button-next" onclick="${this.self}.goBack(${index})">
+            <!-- <button class="center-things button-next" onclick="${this.self}.goBack(${index})">
                 <span class="text-button">Anterior</span>
-            </button>
+            </button> -->
             `
         }
         return result
@@ -37,8 +37,8 @@ class Quiz{
 			alt="Card image cap"
 		>
 		<div class="card-body">
-		    <h5 class="card-title text-center">Pergunta ${number+1}:</h5>
-			<p class="text-center">${question.title}</p>
+		    <h5 class="card-title text-center" style="font-size:24px"><b>Pergunta ${number+1}</b></h5>
+			<p class="text-center" style="font-size:22px">${question.title}</p>
             ${this.Choices(question.choices, number)}
             ${this.Buttons(number)}
 		</div>
