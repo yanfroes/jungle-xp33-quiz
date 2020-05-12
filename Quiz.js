@@ -1,37 +1,19 @@
 class Quiz{
-    highLigth = (index) => {
-        console.log(this.selected)
-        if(this.selected == index){
-            return 'button-selected'
-        }
-    }
-
     select = (index) => this.update(() => {
         this.selected = index
     })
 
-    Choices = choices => choices.map((choice, i) => {
+    Choices = (choices,questionNum) => choices.map((choice, alt) => {
         return /*html*/`
-            <div
-                class="center-things button-choice text-center text-button-choices ${this.highLigth(i)}"
-                onclick="${this.self}.select(${i})")
-            >${choice}</div>
+            <button
+                class="center-things button-choice text-center text-button-choices"
+                onclick="${this.self}.confirm(${questionNum},${alt})")
+            >${choice}</button>
         `
     }).join('')
 
     Buttons = (index) => {
         let result = ''
-        if(this.index < this.questions.length -1){
-            result += /*html*/`
-            <button class="center-things button-next" onclick="${this.self}.confirm(${index})">
-                <span class="text-button">Próxima</span>
-            </button>
-        `}else{
-            result += /*html*/`
-            <button class="center-things button-next" onclick="${this.self}.confirm(${index})">
-                <span class="text-button">Finalizar</span>
-            </button>
-        `}
         if(this.index != 0){
             result += /*html*/`
             <button class="center-things button-next" onclick="${this.self}.goBack(${index})">
@@ -46,7 +28,7 @@ class Quiz{
         Voce é ${this.result}
     `
 
-    Question = (index, question) => /*html*/`
+    Question = (number, question) => /*html*/`
 
     <div class="card">
 		<img
@@ -55,10 +37,10 @@ class Quiz{
 			alt="Card image cap"
 		>
 		<div class="card-body">
-		    <h5 class="card-title text-center">Pergunta ${index+1}:</h5>
+		    <h5 class="card-title text-center">Pergunta ${number+1}:</h5>
 			<p class="text-center">${question.title}</p>
-            ${this.Choices(question.choices)}
-            ${this.Buttons(index)}
+            ${this.Choices(question.choices, number)}
+            ${this.Buttons(number)}
 		</div>
 	</div>
     `
@@ -98,20 +80,17 @@ class Quiz{
         return JSON.stringify(result)
     }
 
-    confirm = (index) => this.update(() => {
-        let choice = this.selected
-        console.log(choice)
-        if(choice || choice == 0){
-            this.answers[index] = this.questions[index].results[choice]
-            if(this.index < this.questions.length -1){
-                this.selected = undefined
-                this.index++
-            }
-            else{
-                this.result = this.getResult()
-            }
+    confirm = (index,alt) => this.update(() => {
+        let option = this.questions[index].results[alt]
+        console.log('pergunta:',index+1, 'opcao',option)
+        this.answers[index] = option
+
+        if(this.index < this.questions.length -1){
+            this.index++
         }
-        console.log(this.answers,this.questions.length, this.finish)
+        else{
+            this.result = this.getResult()
+        }
     })
 
     goBack = (index) => this.update(() => {
