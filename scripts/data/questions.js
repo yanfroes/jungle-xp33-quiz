@@ -42,16 +42,16 @@ QUESTIONS.push({
     results: [4, 1, 2, 3]
 })
 
-QUESTIONS.push({
-    title: "Qual meme mais representa você?",
-    imagegif: "",
-    choices: ["a", "b", "c", "d"],
-    results: [1, 2, 3, 4]
-})
-
-QUESTIONS.push({
-    title: "Qual challenge você se desafiaria fazer?",
-    imagegif: "",
-    choices: ["1", "2", "3", "4"],
-    results: [1, 2, 3, 4]
-})
+// QUESTIONS.push({
+//     title: "Qual meme mais representa você?",
+//     imagegif: "",
+//     choices: ["a", "b", "c", "d"],
+//     results: [1, 2, 3, 4]
+// })
+//
+// QUESTIONS.push({
+//     title: "Qual challenge você se desafiaria fazer?",
+//     imagegif: "",
+//     choices: ["1", "2", "3", "4"],
+//     results: [1, 2, 3, 4]
+// })

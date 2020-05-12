@@ -30,7 +30,7 @@ class Quiz{
         <div class="card">
 		<img
 			class="card-img-top center-things"
-			src= "images/${result.imagegif}"
+			src= "${result.imagegif}"
 		>
 		<div class="card-body">
 		    <h5 class="card-title text-center" style="font-size:24px"><b>Voce é ${result.title}</b></h5>
@@ -45,7 +45,7 @@ class Quiz{
     <div class="card">
 		<img
 			class="card-img-top center-things"
-			src= "images/${question.imagegif}"
+			src= "${question.imagegif}"
 		>
 		<div class="card-body">
 		    <h5 class="card-title text-center" style="font-size:24px"><b>Pergunta ${number+1}</b></h5>
