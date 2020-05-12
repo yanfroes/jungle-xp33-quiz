@@ -13,7 +13,7 @@ body {
   height: 100%;
 }
 .bg {
-background-image: url("background.png");
+background-image: url("../images/background.png");
 /* Full height */
 height: 100%;
 
