@@ -23,28 +23,28 @@ QUESTIONS.push({
 
 QUESTIONS.push({
     title: "Conteúdo:",
-    imagegif: "https://media.giphy.com/media/eh7W3dJGvRa4FymAPf/source.gif",
+    imagegif: "",
     choices: ["Você ama compartilhar novidades de make e cuidados com a pele", "Você gosta de polêmicas", "Você ama compartilhar tudo sobre roupas e moda ", "Você não tem conteúdo específico "],
     results: [3, 2, 4,1 ]
 })
 
 QUESTIONS.push({
     title: "O seu feed:",
-    imagegif: "https://media.giphy.com/media/zpIADSd2bkC9G/source.gif",
+    imagegif: "",
     choices: ["Tem trabalho e sua rotina também", "Tem só cliques por fotógrafos ", "Muita natureza e reflexões", "Só usando produtos de grife "],
     results: [3, 4,1 ,2 ]
 })
 
 QUESTIONS.push({
     title: "Qual é o seu tipo de feed? ",
-    imagegif: "https://media.giphy.com/media/VdJVBpxwoFRfP9jVNE/source.gif",
+    imagegif: "",
     choices: ["Trabalho com paleta de cores ", "As fotos precisam estar sequenciadas em 3-3", "Eu não ligo pra isso, posto a foto do momento no qual eu to vivendo ", "Eu só vivo de #TBT"],
     results: [4, 1, 2, 3]
 })
 
 QUESTIONS.push({
     title: "Qual meme mais representa você?",
-    imagegif: "https://media.giphy.com/media/VdJVBpxwoFRfP9jVNE/source.gif",
+    imagegif: "",
     choices: ["a", "b", "c", "d"],
     results: [1, 2, 3, 4]
 })
