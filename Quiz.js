@@ -34,7 +34,6 @@ class Quiz{
 		<img
 			class="card-img-top center-things"
 			src="${question.imagegif}"
-			alt="Card image cap"
 		>
 		<div class="card-body">
 		    <h5 class="card-title text-center" style="font-size:24px"><b>Pergunta ${number+1}</b></h5>
