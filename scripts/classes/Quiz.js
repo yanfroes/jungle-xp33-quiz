@@ -24,9 +24,21 @@ class Quiz{
         return result
     }
 
-    Result = () => /*html*/`
-        Voce é ${this.result}
-    `
+    Result = () => {
+        let result = RESULTS[this.result]
+        return /*html*/`
+        <div class="card">
+		<img
+			class="card-img-top center-things"
+			src= "images/${result.imagegif}"
+		>
+		<div class="card-body">
+		    <h5 class="card-title text-center" style="font-size:24px"><b>Voce é ${result.title}</b></h5>
+			<p class="text-center" style="font-size:22px">${result.text}</p>
+		</div>
+	</div>
+        `
+    }
 
     Question = (number, question) => /*html*/`
 
@@ -76,7 +88,7 @@ class Quiz{
                 ax : x
         )
 
-        return JSON.stringify(result)
+        return parseInt(result)
     }
 
     confirm = (index,alt) => this.update(() => {
