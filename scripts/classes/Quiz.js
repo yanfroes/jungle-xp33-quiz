@@ -35,6 +35,9 @@ class Quiz{
 		<div class="card-body">
 		    <h5 class="card-title text-center" style="font-size:24px"><b>Voce é ${result.title}</b></h5>
 			<p class="text-center" style="font-size:22px">${result.text}</p>
+      <a href="http://groupjungle.site/quiz.html"><button class="center-things button-next">
+          <span class="text-button">Refazer Quiz</span>
+      </button></a>
 		</div>
 	</div>
         `
