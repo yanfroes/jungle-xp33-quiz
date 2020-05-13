@@ -48,7 +48,7 @@ class Quiz{
                 class="card-img-top center-things"
                 src= "${question.imagegif}"
             >
-            <div class="card-body">
+            <div class="card-body">                
                 <h5 class="card-title text-center" style="font-size:24px"><b>Pergunta ${number+1}</b></h5>
                 <p class="text-center" style="font-size:22px">${question.title}</p>
                 ${Choices(question.choices, number)}
