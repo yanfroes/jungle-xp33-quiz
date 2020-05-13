@@ -2,7 +2,7 @@ QUESTIONS = []
 
 QUESTIONS.push({
     title: "Indicando um produto:",
-    imagegif: "images/gif3.gif",
+    imagegif: "images/gif8.gif",
     choices: ["É criativo na hora de indicar a alguém", "Repete a mesma fala de quem te indicou ", "Indica um produto e posta usando outro", "Não indica nada nunca, só pagando "],
     results: [4, 3,2 ,1 ]
 })
