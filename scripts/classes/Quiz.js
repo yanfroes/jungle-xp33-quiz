@@ -1,4 +1,5 @@
 class Quiz{
+    // todos os elementos visuais
     View(action){    
         const Choices = (choices,questionNum) => choices.map((choice, alt) => {
             return /*html*/`
@@ -64,11 +65,32 @@ class Quiz{
         return Content()
     }
 
+    // realizam alguma mudança no código
     Actions = {
         select:(index) => this.update(() => {
             this.selected = index
         }),
     
+        confirm:(index,alt) => this.update(action => {
+            let option = this.questions[index].results[alt]
+            console.log('pergunta:',index+1, 'opcao',option)
+            this.answers[index] = option
+    
+            if(this.index < this.questions.length -1){
+                this.index++
+            }
+            else{
+                this.result = this.Functions.getResult()
+            }
+        }),
+    
+        goBack:(index) => this.update(() => {
+            this.index--
+        })
+    }
+
+    // retornam valores
+    Functions = {
         getResult:() => {
             let each = {}
             this.answers.forEach(item => {
@@ -84,23 +106,6 @@ class Quiz{
     
             return parseInt(result)
         },
-    
-        confirm:(index,alt) => this.update(action => {
-            let option = this.questions[index].results[alt]
-            console.log('pergunta:',index+1, 'opcao',option)
-            this.answers[index] = option
-    
-            if(this.index < this.questions.length -1){
-                this.index++
-            }
-            else{
-                this.result = action.getResult()
-            }
-        }),
-    
-        goBack:(index) => this.update(() => {
-            this.index--
-        })
     }
 
     constructor(self){
