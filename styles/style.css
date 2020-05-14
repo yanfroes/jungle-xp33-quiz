@@ -220,6 +220,12 @@ a.padding-icons svg:hover {
   height: 64px;
   margin-top: -10px;
 }
+#container {
+  background-color: #30cc81;
+  color: #ffffff;
+  padding: 25px;
+  height:100vh;
+}
 
 @media(min-width: 768px) {
   .logo-jungle {
@@ -236,13 +242,15 @@ a.padding-icons svg:hover {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 25px;
-    background-color: #30cc81;
-    color: #ffffff;
+
     border-radius: 25px;
   }
 
   #container {
+    background-color: #30cc81;
+    color: #ffffff;
     padding: 25px;
+    height:100vh;
   }
 
   input.form-control {
