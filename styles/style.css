@@ -167,6 +167,14 @@ height: 100%;
 }
 
 /*CUSTOMIZAÇÃO DA KELLY*/
+.logo-jungle {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 input.form-control {
   background-color: #eeeeee;
 }
@@ -208,6 +216,13 @@ a.padding-icons svg:hover {
 
 @media(min-width: 768px)
 {
+  .logo-jungle {
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #container {
     margin: 0;
     position: absolute;
