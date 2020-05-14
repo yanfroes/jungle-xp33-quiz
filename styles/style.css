@@ -14,6 +14,7 @@ body {
 }
 .bg {
 background-image: url("../images/background.png");
+background-repeat: repeat-x;
 /* Full height */
 height: 100%;
 
@@ -33,8 +34,8 @@ height: 100%;
   margin-bottom: 8px;
   flex-direction: row;
   padding: 8px 106px;
-  max-width: 400px;
-  left: 38px;
+  max-width: 400px;  
+  height: 62px;
   background:#C4C4C4;
 }
 .form {
@@ -90,8 +91,7 @@ height: 100%;
   flex-direction: row;
   padding: 16px 106px;
   max-width: 400px;
-  height: 62px;
-  left: 38px;
+  height: 62px;  
   background: #1D781D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
@@ -117,8 +117,8 @@ height: 100%;
 .text-button-copy {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 25px;
   line-height: 21px;
   /* Inside Auto Layout */
   flex: none;
@@ -156,7 +156,75 @@ height: 100%;
   margin: 10px 0px;
 }
 
+
+.share-text {
+  color: #ffffff;
+}
+
 .card-img-top {
   max-height: 350px;
   max-width: 300px;
+}
+
+/*CUSTOMIZAÇÃO DA KELLY*/
+input.form-control {
+  background-color: #eeeeee;
+}
+
+.money {
+  color: green;
+}
+
+.texto-chamada {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.chamada-form {
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #30cc81;
+  padding: 25px;
+  color: #ffffff;
+}
+
+a.padding-icons svg {
+  width: 53px;
+  height: 54px;
+	-webkit-transition: .5s all ease-in-out;
+	-moz-transition: .5s all ease-in-out;
+	transition: .5s all ease-in-out
+}
+
+a.padding-icons svg:hover {
+  width: 63px;
+  height: 64px;
+  margin-top: -10px;
+}
+
+
+@media(min-width: 768px)
+{
+  #container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 25px;
+    background-color: #30cc81;
+    color: #ffffff;
+    border-radius: 25px;
+  }
+
+  input.form-control {
+    background-color: #ffffff;
+  }
+
+  label b {
+    color: #ffffff;
+  }
 }
