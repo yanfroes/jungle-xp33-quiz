@@ -104,9 +104,8 @@ body {
   margin-bottom: 8px;
   flex-direction: row;
   padding: 10px 16px;
-  width: 331px;
+  width: 100%;
   left: 38px;
-  top: 363px;
   background: #C4C4C4;
 }
 

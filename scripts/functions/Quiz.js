@@ -38,12 +38,17 @@ const Functions = {
 }
 
 const View = (data,name) => {
-    const Choices = (choices,questionNum) => choices.map((choice, alt) => {
+    const Choices = (choices,gif,questionNum) => choices.map((choice, alt) => {
         return /*html*/`
-            <button
-                class="center-things button-choice text-center text-button-choices"
+            <div class="col-6"><button
+                class="btn btn-secondary center-things button-choice text-center text-button-choices"
                 onclick="Actions.confirm(${name},${questionNum},${alt})")
-            >${choice}</button>
+            ><img
+            style="max-width:150px;max-height:150px" class="card-img-top center-things"
+            src= "${gif[alt]}"
+            >${choice}
+
+            </button></div>
         `
     }).join('')
 
@@ -53,10 +58,10 @@ const View = (data,name) => {
                 class="card-img-top center-things"
                 src= "${question.imagegif}"
             >
-            <div class="card-body">                
+            <div class="card-body">
                 <h5 class="card-title text-center" style="font-size:24px"><b>Pergunta ${number+1}</b></h5>
                 <p class="text-center" style="font-size:22px">${question.title}</p>
-                ${Choices(question.choices, number)}
+                <div class="row">${Choices(question.choices,question.choicesgif, number)}</div>
             </div>
         </div>
         `
@@ -85,7 +90,7 @@ const View = (data,name) => {
             ${Result(data)}`
             : /*html*/`
             ${Question(State.index,data.questions[State.index])}
-            `         
+            `
     return Content()
 }
 
@@ -93,4 +98,3 @@ const Quiz = (data, name) => (update = () => {}) => {
     update()
     document.querySelector('#quiz').innerHTML = View(data,name)
 }
-
