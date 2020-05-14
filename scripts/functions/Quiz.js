@@ -59,7 +59,7 @@ const View = (data,name) => {
                 src= "${question.imagegif}"
             >
             <div class="card-body">
-                <p class="text-center" style="font-size:22px">${question.title}</p>
+                <p class="text-center" style="font-size:22px"><b>${question.title}</b></p>
                 <div class="row">${Choices(question.choices,question.choicesgif, number)}</div>
             </div>
         </div>
@@ -74,10 +74,10 @@ const View = (data,name) => {
                 class="card-img-top center-things"
                 src= "${result.imagegif}"
             >
-            <div class="card-body">
+            <div class="card-body" style="padding:0px">
                 <h5 class="card-title text-center" style="font-size:24px"><b>Voce é ${result.title}</b></h5>
                 <p class="text-center" style="font-size:22px">${result.text}</p>
-          <a href="http://groupjungle.site/quiz.html"><button class="center-things button-next">
+          <a href="http://groupjungle.site/quiz.html"><button class="btn center-things button-choice text-center text-button-choices">
               <span class="text-button">Refazer Quiz</span>
           </button></a>
             </div>
