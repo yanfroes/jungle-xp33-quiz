@@ -174,6 +174,15 @@ height: 100%;
   margin-right: auto;
 }
 
+.first-h1 {
+  font-size: 40px;
+  color: #9235b2;
+}
+
+.first-h3 {
+  color: #30cc81;
+}
+
 
 input.form-control {
   background-color: #eeeeee;
@@ -202,9 +211,9 @@ input.form-control {
 a.padding-icons svg {
   width: 53px;
   height: 54px;
-	-webkit-transition: .5s all ease-in-out;
-	-moz-transition: .5s all ease-in-out;
-	transition: .5s all ease-in-out
+	-webkit-transition: .3s all ease-in-out;
+	-moz-transition: .3s all ease-in-out;
+	transition: .3s all ease-in-out
 }
 
 a.padding-icons svg:hover {
