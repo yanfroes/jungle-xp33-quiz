@@ -8,16 +8,12 @@
     <title>Que tipo de influencer você seria?</title>
     <link rel="shortcut icon" href="https://gama.academy/icons/icon-48x48.png?v=757c95a04621d0c77f2dc80aebdf92e8" />
 
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- testing some fonts here -->
     <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
@@ -34,16 +30,15 @@
       }
 
       /*The active selector isn't working though :c*/
-      .btn-secondary:hover,
-      .btn-secondary:active {
+      .btn-secondary:hover, .btn-secondary:active {
         background-color: #782d91;
-        border-color: #782d91;
+        border-color: #782d91;        
       }
     </style>
 
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
+      (function(w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
           'gtm.start': new Date().getTime(),
@@ -71,45 +66,35 @@
           <img class="card-img-top center-things" style="padding-top:20px" src="images/gif3.gif" alt="Card image cap">
           <h1 class="title-index text-center first-h1"><b>Que tipo de influencer você seria?</b></h1>
           <h3 class="text-center first-h3"> Chegou a hora da verdade!</h3>
-          <p class="texto-chamada"> Se você chegou até aqui, é porque assim como muitos influencers, você adora fazer
-            quiz pra tudo, né?! A Jungle tá disponibilizando um quiz superbacana pra você...</p>
-          <p class="texto-chamada">Aproveitando, você sabia que tem uma plataforma de vídeos que já conta com mais de
-            800 milhões de usuários e com um moonteee de influencer por lá topando tudo que é challenge? Você não tá
-            sabendo !? Fica tranquilo que após o quiz você vai
-            receber mais conteúdos sobre isso e como ser influencer. <br>E um alerta de spoiler: você ainda pode ganhar
-            um <b class="money">Money...</b></p>
-        </div>
+          <p class="texto-chamada"> Se você chegou até aqui, é porque assim como muitos influencers, você adora fazer quiz pra tudo, né?! A Jungle tá disponibilizando um quiz superbacana pra você...</p>
+          <p class="texto-chamada">Aproveitando, você sabia que tem uma plataforma de vídeos que já conta com mais de 800 milhões de usuários e com um moonteee de influencer por lá topando tudo que é challenge? Você não tá sabendo !? Fica tranquilo que após o quiz você vai
+            receber mais conteúdos sobre isso e como ser influencer. <br>E um alerta de spoiler: você ainda pode ganhar um <b class="money">Money...</b></p>
+        </div> 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <div id='container'>
             <h3 class="chamada-form">Faça o nosso quiz e descubra que tipo você seria: </h3>
-            <form class="form-group" id="form" method="POST"
-              action="https://smtl.gama.academy/leads/db22dd71-915e-11ea-9e98-2f3c29e0891c">
+            <form class="form-group" id="form" method="POST" action="https://smtl.gama.academy/leads/db22dd71-915e-11ea-9e98-2f3c29e0891c">
               <div class="column">
                 <div class="form">
                   <div class="row">
                     <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-form"><b>Nome:</b></label>
-                    <input class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 form-control" name="name" type="text"
-                      pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
+                    <input class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
                   </div>
                   <div class="row" style="padding-top: 10px">
                     <label class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-form"><b>Email:</b></label>
-                    <input class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 form-control" name="email" type="email"
-                      title="Digite um email válido" required />
+                    <input class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 form-control" name="email" type="email" title="Digite um email válido" required />
                   </div>
 
-                  <input name="redirectTo" type="hidden"
-                    value="https://yanfroes.github.io/jungle-xp33-quiz/quiz.html" />
+                  <input name="redirectTo" type="hidden" value="https://yanfroes.github.io/jungle-xp33-quiz/quiz.html" />
                   <div class="row">
-                    <input
-                      class="center-things col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 button-next text-button btn btn-secondary"
-                      type="submit" value="Iniciar Quiz" />
+                    <input class="center-things col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-4 button-next text-button btn btn-secondary" type="submit" value="Iniciar Quiz" />
                   </div>
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </div>
+      </div>      
     </div>
 
     <div class="footer">
@@ -122,8 +107,7 @@
           <h2 class="title-index text-center share-text">Compartilhar</h2>
           <div class="center-things text-center">
             <!-- WhatsApp Icon-->
-            <a class="padding-icons" href="https://wa.me/?text=http://groupjungle.site/"><svg width="53" height="54"
-                viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="padding-icons" href="https://wa.me/?text=http://groupjungle.site/"><svg width="53" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                   <path
                     d="M26.5065 0H26.4935C12.1578 0 0.5 12.1095 0.5 27C0.5 32.9062 2.333 38.3805 5.44975 42.8254L2.2095 52.8559L12.2032 49.5382C16.3145 52.3665 21.2188 54 26.5065 54C40.8422 54 52.5 41.8871 52.5 27C52.5 12.1129 40.8422 0 26.5065 0Z"
@@ -141,16 +125,10 @@
             <!-- WhatsApp Icon-->
 
             <!-- Facebook Icon-->
-            <a class="padding-icons"
-              href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgroupjungle.site%2F&amp;src=sdkpreparse"><svg
-                width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="padding-icons" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgroupjungle.site%2F&amp;src=sdkpreparse"><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
-                  <path
-                    d="M46 0H7C3.41417 0 0.5 2.97021 0.5 6.625V46.375C0.5 50.0276 3.41417 53 7 53H46C49.5837 53 52.5 50.0276 52.5 46.375V6.625C52.5 2.97021 49.5837 0 46 0Z"
-                    fill="#3B5999" />
-                  <path
-                    d="M36.25 26.5V19.875C36.25 18.0465 37.706 18.2188 39.5 18.2188H42.75V9.9375H36.25C30.8637 9.9375 26.5 14.3851 26.5 19.875V26.5H20V34.7812H26.5V53H36.25V34.7812H41.125L44.375 26.5H36.25Z"
-                    fill="white" />
+                  <path d="M46 0H7C3.41417 0 0.5 2.97021 0.5 6.625V46.375C0.5 50.0276 3.41417 53 7 53H46C49.5837 53 52.5 50.0276 52.5 46.375V6.625C52.5 2.97021 49.5837 0 46 0Z" fill="#3B5999" />
+                  <path d="M36.25 26.5V19.875C36.25 18.0465 37.706 18.2188 39.5 18.2188H42.75V9.9375H36.25C30.8637 9.9375 26.5 14.3851 26.5 19.875V26.5H20V34.7812H26.5V53H36.25V34.7812H41.125L44.375 26.5H36.25Z" fill="white" />
                 </g>
                 <defs>
                   <clipPath id="clip0">
@@ -160,115 +138,51 @@
               </svg></a>
             <!-- Facebook Icon-->
 
-            <!-- Instagram Icon-->
-            <a class="padding-icons" href="https://www.instagram.com/?url=https://groupjungle.site"><svg width="53"
-                height="57" viewBox="0 0 53 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Messenger Icon-->
+            <a class="padding-icons" href="fb-messenger://share/?link=http%3A%2F%2Fgroupjungle.site%2F"><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                   <path
-                    d="M51.1414 10.7358C50.6681 5.96002 47.1657 2.18744 42.7307 1.67816C31.6088 0.399841 20.4544 0.399841 9.33292 1.67816C4.89789 2.18787 1.39517 5.96002 0.921875 10.7358C-0.265137 22.7128 -0.265137 34.7256 0.921875 46.7026C1.39517 51.4788 4.89789 55.251 9.33252 55.7607C20.454 57.039 31.6088 57.039 42.7307 55.7607C47.1657 55.251 50.6681 51.4788 51.1414 46.7026C52.3284 34.7256 52.3284 22.7132 51.1414 10.7358Z"
-                    fill="url(#paint0_radial)" />
+                    d="M43.1991 52.0926C32.0776 53.3025 20.9224 53.3025 9.8009 52.0926C5.36627 51.6102 1.86356 48.0401 1.39026 43.5198C0.203247 32.1845 0.203247 20.8151 1.39026 9.47977C1.86356 4.95985 5.36627 1.38978 9.8009 0.907379C20.9224 -0.30246 32.0772 -0.30246 43.1987 0.907379C47.6337 1.38978 51.1364 4.95985 51.6097 9.47977C52.7968 20.8151 52.7968 32.1845 51.6097 43.5198C51.1364 48.0401 47.6341 51.6102 43.1991 52.0926Z"
+                    fill="url(#paint0_linear)" />
                   <path
-                    d="M48.3131 12.7614C47.8933 8.5235 44.7854 5.17603 40.8498 4.72357C30.9808 3.58966 21.0824 3.58966 11.2134 4.72357C7.27826 5.17603 4.16989 8.5235 3.74975 12.7614C2.69683 23.3895 2.69683 34.0493 3.74975 44.6771C4.16989 48.9153 7.27826 52.2628 11.2134 52.7148C21.0824 53.8492 30.9808 53.8492 40.8494 52.7148C44.785 52.2628 47.8933 48.9153 48.3131 44.6771C49.3664 34.0493 49.3664 23.3895 48.3131 12.7614Z"
+                    d="M48.7815 11.3968C48.3617 7.386 45.2538 4.21786 41.3182 3.78965C31.4492 2.71648 21.5508 2.71648 11.6818 3.78965C7.74664 4.21786 4.63827 7.386 4.21814 11.3968C3.16522 21.4556 3.16522 31.5444 4.21814 41.6028C4.63827 45.614 7.74664 48.7821 11.6818 49.21C21.5508 50.2835 31.4492 50.2835 41.3178 49.21C45.2534 48.7821 48.3617 45.614 48.7815 41.6028C49.8348 31.5444 49.8348 21.4556 48.7815 11.3968Z"
                     fill="url(#paint1_linear)" />
                   <path
-                    d="M0.810791 45.5418C0.846497 45.9289 0.883392 46.316 0.921875 46.7031C1.39517 51.4788 4.89789 55.251 9.33292 55.7607C20.4544 57.039 31.6092 57.039 42.7307 55.7607C47.1657 55.251 50.6681 51.4788 51.1414 46.7031C51.1798 46.316 51.2167 45.9289 51.2528 45.5418H0.810791Z"
+                    d="M1.27917 42.4212C1.31488 42.7876 1.35178 43.1539 1.39026 43.5202C1.86356 48.0402 5.36627 51.6102 9.8013 52.0926C20.9228 53.3025 32.0776 53.3025 43.1991 52.0926C47.6341 51.6102 51.1364 48.0402 51.6097 43.5202C51.6482 43.1539 51.6851 42.7876 51.7212 42.4212H1.27917Z"
                     fill="url(#paint2_linear)" />
                   <path
-                    d="M51.1414 46.7026C51.7793 40.267 52.0737 33.8212 52.0261 27.3762L40.1401 14.5759C38.6551 12.7502 36.4862 11.6108 33.9376 11.5121C28.6964 11.3087 23.4386 11.319 18.1966 11.5129C13.8429 11.6744 10.7984 14.8258 10.0177 19.4576C9.88 20.2753 9.79749 21.1038 9.68918 21.9275V35.5062C9.74908 35.9463 9.83716 36.3842 9.86453 36.8268C10.0391 39.6441 11.1142 42.0572 12.8356 43.6897L24.9311 56.7151C30.8669 56.76 36.8032 56.4421 42.7307 55.7607C47.1657 55.251 50.6681 51.4788 51.1414 46.7026Z"
+                    d="M51.6097 43.5198C52.1009 38.8293 52.3881 34.1331 52.473 29.4356L38.5201 15.2144C35.5879 12.0632 31.2901 10.0738 26.5 10.0738C17.6641 10.0738 10.5011 16.8411 10.5011 25.1887C10.5011 29.297 12.2376 33.0211 15.0532 35.7452C15.2385 35.9446 16.3731 37.0978 16.4624 37.1888L16.5231 42.2097C16.5286 42.6691 16.7103 43.1082 17.0289 43.4329L26.4151 52.9996C32.0125 53.0028 37.61 52.7004 43.1987 52.0926C47.6341 51.6102 51.1364 48.0402 51.6097 43.5198Z"
                     fill="url(#paint3_linear)" />
                   <path
-                    d="M51.1414 46.7031C50.6685 51.4784 47.165 55.2514 42.7307 55.7607C36.804 56.4417 30.8666 56.76 24.9315 56.7151L12.8543 43.7089C14.2543 45.0287 16.0793 45.8323 18.197 45.9182C23.4378 46.1301 28.6968 46.1246 33.9376 45.9212C38.6777 45.7366 42.1079 41.9585 42.2558 36.8538C42.4137 31.4337 42.4137 25.9996 42.2558 20.5795C42.1884 18.2245 41.4207 16.1524 40.148 14.5844L52.0265 27.3766C52.0733 33.8207 51.7789 40.2675 51.1414 46.7031Z"
-                    fill="url(#paint4_linear)" />
-                  <path
-                    d="M32.1674 22.6555C30.6448 20.8701 28.46 19.7498 26.0316 19.7498C21.4319 19.7498 17.7027 23.7659 17.7027 28.7194C17.7027 31.3346 18.7429 33.6874 20.4008 35.3272L39.6711 56.0798C40.6911 55.9841 41.7111 55.8777 42.7303 55.7607C47.1653 55.251 50.6681 51.4788 51.1414 46.7026C51.2501 45.605 51.3488 44.5066 51.4377 43.4081L32.1674 22.6555Z"
-                    fill="url(#paint5_linear)" />
-                  <path
-                    d="M51.9308 34.7517L36.4219 18.0502C36.0601 17.5388 35.49 17.2068 34.8469 17.2068C33.7527 17.2068 32.8653 18.1622 32.8653 19.3409C32.8653 20.0335 33.1735 20.6475 33.6484 21.0371L51.6535 40.4277C51.7757 38.5363 51.8682 36.644 51.9308 34.7517Z"
-                    fill="url(#paint6_linear)" />
-                  <path
-                    d="M9.68918 21.9275C9.79749 21.1038 9.88 20.2753 10.0177 19.4576C10.798 14.8258 13.8429 11.6744 18.1966 11.5129C23.4386 11.319 28.6964 11.3087 33.9376 11.5121C38.6762 11.6958 42.1079 15.4744 42.2558 20.5791C42.4133 25.9996 42.4133 31.4333 42.2558 36.8538C42.1079 41.9585 38.6773 45.7366 33.938 45.9208C28.6968 46.1246 23.4378 46.1297 18.197 45.9178C13.4577 45.726 10.1815 41.9388 9.86453 36.8264C9.83716 36.3842 9.74908 35.9459 9.68918 35.5058C9.68918 30.9796 9.68918 26.4533 9.68918 21.9275ZM26.036 42.8955C28.4346 42.8955 30.8356 42.9728 33.2311 42.8775C36.9869 42.7275 39.297 40.3136 39.3847 36.2727C39.4934 31.2376 39.4934 26.1957 39.3847 21.1602C39.297 17.1201 36.9853 14.6498 33.2311 14.5639C28.4659 14.4554 23.6957 14.4562 18.9306 14.5639C15.2049 14.6481 12.888 17.0684 12.7868 21.064C12.6583 26.1628 12.6583 31.2705 12.7868 36.3693C12.888 40.3644 15.2049 42.7288 18.931 42.8775C21.2963 42.9724 23.6675 42.8955 26.036 42.8955Z"
-                    fill="url(#paint7_linear)" />
-                  <path
-                    d="M9.68918 21.9275C9.79749 21.1038 9.88 20.2753 10.0177 19.4576C10.798 14.8258 13.8429 11.6744 18.1966 11.5129C23.4386 11.319 28.6964 11.3087 33.9376 11.5121C38.6762 11.6958 42.1079 15.4744 42.2558 20.5791C42.4133 25.9996 42.4133 31.4333 42.2558 36.8538C42.1079 41.9585 38.6773 45.7366 33.938 45.9208C28.6968 46.1246 23.4378 46.1297 18.197 45.9178C13.4577 45.726 10.1815 41.9388 9.86453 36.8264C9.83716 36.3842 9.74908 35.9459 9.68918 35.5058C9.68918 30.9796 9.68918 26.4533 9.68918 21.9275ZM26.036 42.8955C28.4346 42.8955 30.8356 42.9728 33.2311 42.8775C36.9869 42.7275 39.297 40.3136 39.3847 36.2727C39.4934 31.2376 39.4934 26.1957 39.3847 21.1602C39.297 17.1201 36.9853 14.6498 33.2311 14.5639C28.4659 14.4554 23.6957 14.4562 18.9306 14.5639C15.2049 14.6481 12.888 17.0684 12.7868 21.064C12.6583 26.1628 12.6583 31.2705 12.7868 36.3693C12.888 40.3644 15.2049 42.7288 18.931 42.8775C21.2963 42.9724 23.6675 42.8955 26.036 42.8955Z"
-                    fill="white" />
-                  <path
-                    d="M26.0316 19.7502C21.4319 19.7502 17.7027 23.7659 17.7027 28.7194C17.7027 33.6733 21.4319 37.689 26.0316 37.689C30.6317 37.689 34.3605 33.6733 34.3605 28.7194C34.3605 23.7659 30.6317 19.7502 26.0316 19.7502ZM26.0316 34.6009C23.0153 34.6009 20.5703 31.9678 20.5703 28.7194C20.5703 25.4711 23.0153 22.838 26.0316 22.838C29.0479 22.838 31.493 25.4711 31.493 28.7194C31.493 31.9678 29.0479 34.6009 26.0316 34.6009Z"
-                    fill="white" />
-                  <path
-                    d="M36.8282 19.3409C36.8282 20.5193 35.9411 21.4746 34.8469 21.4746C33.7527 21.4746 32.8653 20.5193 32.8653 19.3409C32.8653 18.1622 33.7527 17.2068 34.8469 17.2068C35.9411 17.2068 36.8282 18.1622 36.8282 19.3409Z"
+                    d="M26.5 10.0738C17.6641 10.0738 10.5011 16.8411 10.5011 25.1887C10.5011 29.9439 12.826 34.1852 16.4596 36.9559L16.5243 42.2853C16.5274 42.5732 16.8329 42.752 17.0789 42.6096L22.0753 39.7177C23.4805 40.099 24.9651 40.3036 26.5 40.3036C35.3359 40.3036 42.4989 33.5362 42.4989 25.1887C42.4989 16.8411 35.3359 10.0738 26.5 10.0738ZM27.7148 30.0604L24.295 26.4325C24.0946 26.2198 23.7796 26.1692 23.5249 26.3091L17.524 29.6026C17.2955 29.728 17.0714 29.43 17.2491 29.2375L24.3402 21.5761C24.5437 21.3566 24.8865 21.3566 25.0896 21.5765L28.5082 25.274C28.709 25.4915 29.028 25.5433 29.2854 25.4006L35.1824 22.1281C35.4109 22.0015 35.6363 22.2999 35.4581 22.4928L28.461 30.0567C28.2591 30.2751 27.9191 30.2767 27.7148 30.0604Z"
                     fill="white" />
                 </g>
                 <defs>
-                  <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                    gradientTransform="translate(10.6913 49.659) scale(57.3468 61.7581)">
-                    <stop stop-color="#FAE100" />
-                    <stop offset="0.0544" stop-color="#FADC04" />
-                    <stop offset="0.1167" stop-color="#FBCE0E" />
-                    <stop offset="0.1829" stop-color="#FCB720" />
-                    <stop offset="0.2514" stop-color="#FE9838" />
-                    <stop offset="0.3054" stop-color="#FF7950" />
-                    <stop offset="0.4922" stop-color="#FF1C74" />
-                    <stop offset="1" stop-color="#6C1CD1" />
-                  </radialGradient>
-                  <linearGradient id="paint1_linear" x1="19.9757" y1="25.0509" x2="-71.1352" y2="-22.5382"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#A1B5D8" stop-opacity="0" />
-                    <stop offset="0.3094" stop-color="#90A2BD" stop-opacity="0.309804" />
-                    <stop offset="0.7554" stop-color="#7C8B9C" stop-opacity="0.756863" />
-                    <stop offset="1" stop-color="#748290" />
+                  <linearGradient id="paint0_linear" x1="17.765" y1="7.4517" x2="31.3336" y2="35.9343" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0082FF" />
+                    <stop offset="1" stop-color="#0078DB" />
                   </linearGradient>
-                  <linearGradient id="paint2_linear" x1="26.0316" y1="50.1532" x2="26.0316" y2="58.8822"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FAE100" stop-opacity="0" />
-                    <stop offset="0.3068" stop-color="#FCA800" stop-opacity="0.305882" />
-                    <stop offset="0.6275" stop-color="#FE7300" stop-opacity="0.627451" />
-                    <stop offset="0.8685" stop-color="#FF5200" stop-opacity="0.866667" />
-                    <stop offset="1" stop-color="#FF4500" />
+                  <linearGradient id="paint1_linear" x1="37.4974" y1="32.5129" x2="-38.6881" y2="-7.58477" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0078DB" stop-opacity="0" />
+                    <stop offset="1" stop-color="#006CB5" />
                   </linearGradient>
-                  <linearGradient id="paint3_linear" x1="23.0733" y1="25.4544" x2="9.25222" y2="12.6204"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#833AB4" stop-opacity="0" />
-                    <stop offset="1" stop-color="#833AB4" />
+                  <linearGradient id="paint2_linear" x1="26.5" y1="45.9334" x2="26.5" y2="51.3413" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0078DB" stop-opacity="0" />
+                    <stop offset="1" stop-color="#006CB5" />
                   </linearGradient>
-                  <linearGradient id="paint4_linear" x1="35.6699" y1="51.9384" x2="28.2713" y2="19.551"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#833AB4" stop-opacity="0" />
-                    <stop offset="1" stop-color="#833AB4" />
-                  </linearGradient>
-                  <linearGradient id="paint5_linear" x1="38.114" y1="41.7312" x2="10.4063" y2="16.0026"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#833AB4" stop-opacity="0" />
-                    <stop offset="1" stop-color="#833AB4" />
-                  </linearGradient>
-                  <linearGradient id="paint6_linear" x1="40.0276" y1="24.9201" x2="30.8652" y2="16.4121"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#833AB4" stop-opacity="0" />
-                    <stop offset="1" stop-color="#833AB4" />
-                  </linearGradient>
-                  <linearGradient id="paint7_linear" x1="36.3563" y1="17.678" x2="13.7651" y2="38.6555"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#833AB4" />
-                    <stop offset="0.0922" stop-color="#9C3495" />
-                    <stop offset="0.2927" stop-color="#DC2546" />
-                    <stop offset="0.392" stop-color="#FD1D1D" />
-                    <stop offset="0.5589" stop-color="#FC6831" />
-                    <stop offset="0.6887" stop-color="#FC9B40" />
-                    <stop offset="0.7521" stop-color="#FCAF45" />
-                    <stop offset="0.7806" stop-color="#FDB750" />
-                    <stop offset="0.8656" stop-color="#FECB6A" />
-                    <stop offset="0.9415" stop-color="#FFD87A" />
-                    <stop offset="1" stop-color="#FFDC80" />
+                  <linearGradient id="paint3_linear" x1="45.9324" y1="47.8269" x2="30.4965" y2="32.6823" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0078DB" stop-opacity="0" />
+                    <stop offset="1" stop-color="#006CB5" />
                   </linearGradient>
                   <clipPath id="clip0">
-                    <rect x="0.0316162" y="0.719421" width="52" height="56" fill="white" />
+                    <rect x="0.5" width="52" height="53" fill="white" />
                   </clipPath>
                 </defs>
               </svg></a>
             <!-- Messenger Icon-->
 
             <!-- Twitter Icon-->
-            <a class="padding-icons" href="https://twitter.com/share?url=http://groupjungle.site/"><svg width="54"
-                height="50" viewBox="0 0 54 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="padding-icons" href="https://twitter.com/share?url=http://groupjungle.site/"><svg width="54" height="50" viewBox="0 0 54 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                   <path
                     d="M44.0202 49.144C32.6849 50.2853 21.3151 50.2853 9.97977 49.144C5.45985 48.6889 1.88978 45.3209 1.40738 41.0564C0.19754 30.3627 0.19754 19.6369 1.40738 8.94318C1.88978 4.67911 5.45985 1.31111 9.97977 0.856018C21.3151 -0.285339 32.6845 -0.285339 44.0198 0.856018C48.5401 1.31111 52.1102 4.67911 52.5926 8.94318C53.8025 19.6369 53.8025 30.3627 52.5926 41.0564C52.1102 45.3209 48.5406 48.6889 44.0202 49.144Z"
@@ -287,23 +201,19 @@
                     fill="white" />
                 </g>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="18.097" y1="7.02991" x2="30.2677" y2="34.6318"
-                    gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="18.097" y1="7.02991" x2="30.2677" y2="34.6318" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#00C3FF" />
                     <stop offset="1" stop-color="#00B0ED" />
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="38.2089" y1="30.6726" x2="-36.7235" y2="-11.9358"
-                    gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="38.2089" y1="30.6726" x2="-36.7235" y2="-11.9358" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#00B0ED" stop-opacity="0" />
                     <stop offset="1" stop-color="#00A2CE" />
                   </linearGradient>
-                  <linearGradient id="paint2_linear" x1="27" y1="42.7132" x2="27" y2="49.2648"
-                    gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint2_linear" x1="27" y1="42.7132" x2="27" y2="49.2648" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#00B0ED" stop-opacity="0" />
                     <stop offset="1" stop-color="#00A2CE" />
                   </linearGradient>
-                  <linearGradient id="paint3_linear" x1="51.1627" y1="47.0774" x2="26.7777" y2="21.2292"
-                    gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint3_linear" x1="51.1627" y1="47.0774" x2="26.7777" y2="21.2292" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#00B0ED" stop-opacity="0" />
                     <stop offset="1" stop-color="#00A2CE" />
                   </linearGradient>
@@ -315,30 +225,26 @@
             <!-- Twitter Icon-->
           </div>
           <div class="">
-            <button class="copy-link center-things col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 btn btn-secondary"
-              onclick="copyToClipboard('#link')"><span class="text-button-copy">Copiar Link</span></button></div>
+            <button class="copy-link center-things col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 btn btn-secondary" onclick="copyToClipboard('#link')"><span class="text-button-copy">Copiar Link</span></button></div>
           <div id="link" class="d-none">http://groupjungle.site/</div>
 
-          <div class="center-things fb-comments" style="margin-top:20px"
-            data-href="https://yanfroes.github.io/jungle-xp33-quiz/index-new.html" data-numposts="20" data-width="">
-          </div>
+          <div class="center-things fb-comments" style="margin-top:20px" data-href="https://yanfroes.github.io/jungle-xp33-quiz/index-new.html" data-numposts="20" data-width=""></div>
         </div>
       </div>
     </div>
   </div>
 
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0"></script>
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 
   <script type='text/javascript' src='scripts/actions/script.js'></script>
 
   <!-- Facebook Pixel Code -->
   <script>
-    ! function (f, b, e, v, n, t, s) {
+    ! function(f, b, e, v, n, t, s) {
       if (f.fbq) return;
-      n = f.fbq = function () {
+      n = f.fbq = function() {
         n.callMethod ?
           n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
@@ -357,14 +263,13 @@
     fbq('init', '632881520906925');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=632881520906925&ev=PageView&noscript=1" /></noscript>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=632881520906925&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
 
   <!-- Hotjar Tracking Code for groupjungle.site -->
   <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () {
+    (function(h, o, t, j, a, r) {
+      h.hj = h.hj || function() {
         (h.hj.q = h.hj.q || []).push(arguments)
       };
       h._hjSettings = {
@@ -394,8 +299,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3DJ6MM" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3DJ6MM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
 </body>
