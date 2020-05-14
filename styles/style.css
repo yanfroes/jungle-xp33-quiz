@@ -9,16 +9,16 @@
 #start {
   display: none;
 }
+
 body {
-  height: 100%;
+  height: 100vh;
 }
+
 .bg {
-background-image: url("../images/background.png");
-background-repeat: repeat-x;
-/* Full height */
-height: 100%;
-
-
+  background-image: url("../images/background.png");
+  background-repeat: repeat-x;
+  /* Full height */
+  height: 100%;
 }
 
 .padding-icons {
@@ -26,7 +26,7 @@ height: 100%;
 }
 
 .form-color {
-  background:#C4C4C4;
+  background: #C4C4C4;
 }
 
 .copy-link {
@@ -34,18 +34,20 @@ height: 100%;
   margin-bottom: 8px;
   flex-direction: row;
   padding: 8px 106px;
-  max-width: 400px;  
+  max-width: 400px;
   height: 62px;
-  background:#C4C4C4;
+  background: #C4C4C4;
 }
-.form {
 
+.form {
   padding: 20px;
   max-width: 400px;
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+
 
 .title-index {
   margin-top: 10px;
@@ -91,7 +93,7 @@ height: 100%;
   flex-direction: row;
   padding: 16px 106px;
   max-width: 400px;
-  height: 62px;  
+  height: 62px;
   background: #1D781D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
@@ -141,7 +143,6 @@ height: 100%;
   margin: 10px 0px;
 }
 
-
 .text-button-choices {
   font-family: Roboto;
   font-style: normal;
@@ -155,7 +156,6 @@ height: 100%;
   align-self: center;
   margin: 10px 0px;
 }
-
 
 .share-text {
   color: #ffffff;
@@ -183,7 +183,6 @@ height: 100%;
   color: #30cc81;
 }
 
-
 input.form-control {
   background-color: #eeeeee;
 }
@@ -201,7 +200,6 @@ input.form-control {
   text-align: center;
 }
 
-
 .footer {
   background-color: #30cc81;
   padding: 25px;
@@ -211,9 +209,9 @@ input.form-control {
 a.padding-icons svg {
   width: 53px;
   height: 54px;
-	-webkit-transition: .3s all ease-in-out;
-	-moz-transition: .3s all ease-in-out;
-	transition: .3s all ease-in-out
+  -webkit-transition: .3s all ease-in-out;
+  -moz-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out
 }
 
 a.padding-icons svg:hover {
@@ -222,26 +220,26 @@ a.padding-icons svg:hover {
   margin-top: -10px;
 }
 
-
-@media(min-width: 768px)
-{
+@media(min-width: 768px) {
   .logo-jungle {
     max-width: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-
-  #container {
+  #formstyle {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 25px;
+  background-color: #30cc81;
+  color: #ffffff;
+  border-radius: 25px;
+  }
+  #container {
     padding: 25px;
-    background-color: #30cc81;
-    color: #ffffff;
-    border-radius: 25px;
   }
 
   input.form-control {
