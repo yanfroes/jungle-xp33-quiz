@@ -47,8 +47,6 @@ body {
   margin-right: auto !important;
 }
 
-
-
 .title-index {
   margin-top: 10px;
   font-family: Roboto;
@@ -106,7 +104,11 @@ body {
   padding: 10px 16px;
   width: 100%;
   left: 38px;
-  background: #C4C4C4;
+  background-color: #9235b2 !important;
+  border-color: #9235b2 !important;
+  font-weight: bold !important;
+  font-size: 20px;
+  color: #fff !important;
 }
 
 .button-selected {
@@ -226,17 +228,19 @@ a.padding-icons svg:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
   #formstyle {
     margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  padding: 25px;
-  background-color: #30cc81;
-  color: #ffffff;
-  border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 25px;
+    background-color: #30cc81;
+    color: #ffffff;
+    border-radius: 25px;
   }
+
   #container {
     padding: 25px;
   }

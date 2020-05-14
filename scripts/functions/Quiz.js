@@ -41,10 +41,10 @@ const View = (data,name) => {
     const Choices = (choices,gif,questionNum) => choices.map((choice, alt) => {
         return /*html*/`
             <div class="col-6"><button
-                class="btn btn-secondary center-things button-choice text-center text-button-choices"
+                class="btn center-things button-choice text-center text-button-choices"
                 onclick="Actions.confirm(${name},${questionNum},${alt})")
             ><img
-            style="max-width:150px;max-height:150px" class="card-img-top center-things"
+            style="width:150px;height:150px;padding-bottom:5px" class="card-img-top center-things"
             src= "${gif[alt]}"
             >${choice}
 
