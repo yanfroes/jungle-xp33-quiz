@@ -20,7 +20,7 @@ $('#form').submit(function (event) {
      $.ajax({
          url: 'https://smtl.gama.academy/leads/db22dd71-915e-11ea-9e98-2f3c29e0891c',
          method: 'POST',
-         data: {name: name, email: email, debugMode: 'True'} ,
+         data: {name: name, email: email} ,
          success: function() {
              window.location = "https://yanfroes.github.io/jungle-xp33-quiz/quiz.html";
          }
