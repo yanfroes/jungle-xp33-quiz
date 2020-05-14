@@ -1,14 +1,14 @@
 Quiz_Data = {
     questions: [{
         title: "O que você fala na hora de indicar uns mimos/produtos?",
-        imagegif: "",
+        imagegif: "gif8.gif",
         choices: ["É criativo na hora de indicar a alguém", "Repete a mesma fala de quem te indicou ", "Indica um produto e posta usando outro", "Não indica nada nunca, só pagando "],
         results: [4, 3,2 ,1 ],
         choicesgif: ['','','',''],
     },
     {
         title: "O que você fala quando começa a gravar um storie?",
-        imagegif: "",
+        imagegif: "gif2.gif",
         choices: ["Geeente", "Falaaa Galeraaa", "Muita gente tá me pedindo…", "Não falo nada, só posto foto"],
         results: [3,4 ,2 ,1 ],
         choicesgif: ['','','',''],
