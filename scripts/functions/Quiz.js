@@ -38,12 +38,17 @@ const Functions = {
 }
 
 const View = (data,name) => {
-    const Choices = (choices,questionNum) => choices.map((choice, alt) => {
+    const Choices = (choices,gif,questionNum) => choices.map((choice, alt) => {
         return /*html*/`
             <button
                 class="center-things button-choice text-center text-button-choices"
                 onclick="Actions.confirm(${name},${questionNum},${alt})")
-            >${choice}</button>
+            >${choice}
+                <img
+                class="card-img-top center-things"
+                src= "${gif[alt]}"
+                >
+            </button>
         `
     }).join('')
 
@@ -56,7 +61,7 @@ const View = (data,name) => {
             <div class="card-body">                
                 <h5 class="card-title text-center" style="font-size:24px"><b>Pergunta ${number+1}</b></h5>
                 <p class="text-center" style="font-size:22px">${question.title}</p>
-                ${Choices(question.choices, number)}
+                ${Choices(question.choices,question.choicesgif, number)}
             </div>
         </div>
         `
