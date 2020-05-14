@@ -14,6 +14,7 @@ body {
   height: 100vh;
 }
 
+
 .bg {
   background-image: url("../images/background.png");
   background-repeat: repeat-x;
@@ -98,12 +99,8 @@ body {
 }
 
 .button-choice {
-  margin-top: 8px;
-  margin-bottom: 8px;
   flex-direction: row;
-  padding: 10px 16px;
   width: 100%;
-  left: 38px;
   background-color: #9235b2 !important;
   border-color: #9235b2 !important;
   font-weight: bold !important;
@@ -230,7 +227,7 @@ a.padding-icons svg:hover {
 #container {
   background-color: #30cc81;
   color: #ffffff;
-  padding: 25px;
+  padding: 5px;
   height: 100vh;
 }
 
@@ -261,4 +258,34 @@ a.padding-icons svg:hover {
   label b {
     color: #ffffff;
   }
+}
+
+
+
+/* buttons same height */
+.col-6 {
+
+}
+@mixin small-viewport {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+.btn {
+    height:90%;
+    white-space: normal !important;
+
+    @include small-viewport {
+        text-align: center;
+    }
+
+    & > span {
+        display: block !important;
+        flex-shrink: 1;  // Required to fix text wrapping bug in IE10
+
+        @include small-viewport {
+            width: 100%;
+        }
+    }
 }
