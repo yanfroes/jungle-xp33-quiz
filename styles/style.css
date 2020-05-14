@@ -167,6 +167,13 @@ body {
   max-width: 300px;
 }
 
+.card-img-answer {
+  max-width:150px;
+  max-height:150px;
+  padding-bottom:5px;
+  
+}
+
 /*CUSTOMIZAÇÃO DA KELLY*/
 .logo-jungle {
   max-width: 20%;
