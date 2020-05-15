@@ -165,8 +165,10 @@ body {
 }
 
 .card-img-answer {
-  max-width: 120px;
-  max-height: 120px;
+  min-width: 139px;
+  min-height: 139px;
+  max-width: 140px;
+  max-height: 140px;
   padding-bottom: 5px;
 }
 
