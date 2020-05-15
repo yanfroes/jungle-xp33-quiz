@@ -4,7 +4,7 @@ Quiz_Data = {
         imagegif: "",
         choices: ["É criativo na hora de indicar a alguém", "Repete a mesma fala de quem te indicou ", "Indica um produto e posta usando outro", "Não indica nada nunca, só pagando "],
         results: [4, 3,2 ,1 ],
-        choicesgif: ['images/1pr1.gif','images/p1r2.gif','images/p1r3.gif','images/p1r4.gif'],
+        choicesgif: ['images/p1r1.gif','images/p1r2.gif','images/p1r3.gif','images/p1r4.gif'],
     },
     {
         title: "O que você fala quando começa a gravar um storie?",
