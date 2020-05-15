@@ -165,10 +165,10 @@ body {
 }
 
 .card-img-answer {
-  min-width: 139px;
-  min-height: 139px;
-  max-width: 140px;
-  max-height: 140px;
+  min-width: 135px;
+  min-height: 135px;
+  max-width: 136px;
+  max-height: 136px;
   padding-bottom: 5px;
 }
 
@@ -266,6 +266,8 @@ a.padding-icons svg:hover {
 
 /* buttons same height */
 .col-6 {
+  padding-right: 5px !important;
+padding-left: 5px!important;
 
 }
 @mixin small-viewport {

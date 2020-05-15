@@ -44,7 +44,7 @@ const View = (data,name) => {
                 class="btn btn-bloc d-flex flex-sm-column align-items-center justify-content-left justify-content-sm-center center-things button-choice text-center text-button-choices"
                 onclick="Actions.confirm(${name},${questionNum},${alt})")
             ><span><img
-             class="card-img-answer center-things"
+             class="card-img-answer center-things "
             src= "${gif[alt]}"
             >${choice}
 
