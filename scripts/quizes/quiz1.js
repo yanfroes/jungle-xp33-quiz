@@ -1,17 +1,17 @@
 Quiz_Data = {
     questions: [{
         title: "O que você fala na hora de indicar uns mimos/produtos?",
-        imagegif: "images/gif8.gif",
+        imagegif: "",
         choices: ["É criativo na hora de indicar a alguém", "Repete a mesma fala de quem te indicou ", "Indica um produto e posta usando outro", "Não indica nada nunca, só pagando "],
         results: [4, 3,2 ,1 ],
-        choicesgif: ['','','',''],
+        choicesgif: ['images/1pr1.gif','images/p1r2.gif','images/p1r3.gif','images/p1r4.gif'],
     },
     {
         title: "O que você fala quando começa a gravar um storie?",
-        imagegif: "images/gif2.gif",
+        imagegif: "",
         choices: ["Geeente", "Falaaa Galeraaa", "Muita gente tá me pedindo…", "Não falo nada, só posto foto"],
         results: [3,4 ,2 ,1 ],
-        choicesgif: ['','','',''],
+        choicesgif: ['images/p2r1.gif','images/p2r2.gif','images/p2r3.gif','images/p2r4.gif'],
     },
     {
         title: "Você é do tipo que:",
